@@ -649,8 +649,6 @@
 
 }
 
-
-
     @media(max-width:768px){
         .top-content{
             flex-direction: column;
@@ -678,6 +676,10 @@
 
         .label_gal:hover{
             background-color: #BFB9B4;
+        }
+
+        .pic::before{
+            margin-top: -20px;
         }
     }
 
