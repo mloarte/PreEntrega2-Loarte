@@ -659,7 +659,7 @@
         }
 
         .foto-galeria{
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: 1fr;
             margin-top: 440px;
         }
     
