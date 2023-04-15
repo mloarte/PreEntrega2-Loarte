@@ -277,37 +277,32 @@
 
     /* index */
 
-    .gridindex{
-        display: grid;
-        grid-template-areas: 
-        "contentindex contentindex"
-        "secondTextIzq imgDer";
-        grid-template-columns: 2.4fr 1.4fr;
-        grid-template-rows: auto; 
-    }
-
-    .contentindex{
-        grid-area: contentindex; background-image: url(../img/Img\ de\ index.png);
-        background-repeat: no-repeat center center center fixed; align-items: center;
-        background-size: cover;
-    }
-
-    .estructuraReseña{grid-area: secondTextIzq;}
-
-    .contentindex{
-        grid-area: contentindex; background-image: url(../img/Img\ de\ index.png);     
-        background-repeat: no-repeat center center center fixed;
-        background-size: cover;
-    }
-
-    .imgindex{
-        grid-area: imgDer;
-        height: auto;
-        width: 100%;}  
-
-
-
     @media (min-width:1024px){
+        
+        .gridindex{
+            display: grid;
+            grid-template-areas: 
+            "contentindex contentindex"
+            "secondTextIzq imgDer";
+            grid-template-columns: 2.4fr 1.4fr;
+            grid-template-rows: auto; 
+        }
+        
+        .contentindex{
+            grid-area: contentindex; background-image: url(../img/Img\ de\ index.png);
+            background-repeat: no-repeat center center center fixed; align-items: center;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    
+        .estructuraReseña{grid-area: secondTextIzq;}
+    
+        .imgindex{
+            grid-area: imgDer;
+            height: auto;
+            width: 100%;}  
+    
         main{
             padding-bottom: 10px;
             min-height: calc(100vh - 211px - 58px);
@@ -361,12 +356,42 @@
 
     @media(max-width:768px){
 
+        .main_index{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .gridindex{
+            display: grid;
+            grid-template-areas: 
+            "contentindex"
+            "secondTextIzq"
+            "img_index";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto; 
+        }
+        
+        .contentindex{
+            grid-area: contentindex; background-image: url(../img/Img\ de\ index.png);
+            background-repeat: no-repeat center center center; 
+            align-items: center;
+            text-align: justify;
+        }
+
+        .estructuraReseña{grid-area: secondTextIzq;}
+    
+        .imgindex{
+            grid-area: img_index;
+            height: auto;
+            width: 100%;}  
+    
+
         .contentindex h4{
-            font-size: 25px;
+            font-size: 29px;
             width: auto;
             text-align: center;
             justify-content: center;
-            padding: 50px 0;
+            padding: 50px 40px 40px 40px;
         }
 
         .inputs{
@@ -392,7 +417,7 @@
         }
         
         .estructuraReseña{
-            font-size: 13px;
+            font-size: 15px;
             padding: 30px 10px 30px 10px;
             text-align: justify;
         }
@@ -403,9 +428,8 @@
         }
 
         .imgindex{
-            border-radius: 0.8rem;
-            padding: 10px 10px 10px 10px;
-            margin-top: 30px;
+            border-radius: 1.2rem;
+            padding: 10px 10px 0px 10px;
         }
     }
 
