@@ -277,6 +277,14 @@
 
     /* index */
 
+    .h1_index{
+        font-weight: normal;
+        font-size: 35px;
+        margin: 0 0 30px;
+        text-align: start;
+        color: #B68354;
+    }
+    
     @media (min-width:1024px){
         
         .gridindex{
@@ -291,6 +299,7 @@
         .contentindex{
             grid-area: contentindex; background-image: url(../img/Img\ de\ index.png);
             background-repeat: no-repeat center center center fixed; align-items: center;
+            background-size: cover;
             align-items: center;
             text-align: center;
             justify-content: center;
@@ -817,6 +826,12 @@
         grid-template-rows: 2;
         text-align: center;
         justify-content: space-between;
+    }
+
+    .price{
+        color: #C46A2C;
+        font-size: 34px;
+        font-weight: 700;
     }
     
 
